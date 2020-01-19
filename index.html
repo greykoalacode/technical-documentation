@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Technical Documentation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header><h1>C++ Documentation</h1></header>
+    <nav id="navbar">
+      <header id="title">C++ : Made Easy !</header>
+      <ul>
+      <li class="bar"><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li class="bar"><a class="nav-link" href="#Hello_World">Hello World</a></li>
+      <li class="bar"><a  class="nav-link" href="#Datatypes">Datatypes</a></li>
+      <li class="bar"><a  class="nav-link" href="#Variables">Variables</a></li>
+      <li class="bar"><a class="nav-link" href="#Scope">Scope</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header >
+          <h2>Introduction</h2>
+        </header>
+          <p><h3>What is C++ ?</h3></p>
+          <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+          <p>C++ was developed by Bjarne Stroustrup at Bell labs in 1979, as an extension to the C language.</p>
+          <p>C++ gives programmers a high level of control over system resources and memory.</p>
+          <p>The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.</p>
+          <p><h3>Why Use C++ ?</h3></p>
+          <p>C++ is one of the world's most popular programming languages.</p>
+          <p>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</p>
+          <p>C++ is a general purpose coding language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+          <p>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+          <p>C++ is fun and easy to learn!</p>
+          <p>As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa</p>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header >
+          <h2>Hello World</h2>
+        </header>
+        <p>A simple C++ program to display "Hello, World!" on the screen. Since, it's a very simple program, it is often used to illustrate the syntax of a programming language.</p>
+        <code>
+          #include < iostream>
+            <br>int main() 
+            <br>
+            {
+               <br> std::cout << "Hello, World!";
+               <br> return 0;<br>
+            }
+        </code>
+        <h3>Output:</h3>
+        <code>
+          Hello, World!
+        </code>
+      </section>
+      <section class="main-section" id="Datatypes">
+        <header >
+          <h2>Datatypes</h2>
+        </header>
+        <div class="content">
+          <p>All variables use data-type during declaration to restrict the type of data to be stored.</p><p> Therefore, we can say that data types are used to tell the variables the type of data it can store.</p><p> Whenever a variable is defined in C++, the compiler allocates some memory for that variable based on the data-type with which it is declared. Every data type requires a different amount of memory.</p>
+          <h3>Primitive Datatypes in C++</h3>
+          <ul>
+            <li><h3>Integer</h3>
+              <p>
+                Keyword used for integer data types is int.</p><p> Integers typically requires 4 bytes of memory space and ranges from -2147483648 to 2147483647.</p></li>
+            <li><h3>Character</h3>
+              <p>
+                Character data type is used for storing characters. Keyword used for character data type is char.</p></li>
+            <li><h3>Boolean</h3>
+              <p>
+              Boolean data type is used for storing boolean or logical values. A boolean variable can store either true or false. Keyword used for boolean data type is bool.</p></li>
+            <li><h3>Floating Point</h3>
+              <p>
+              Floating Point data type is used for storing single precision floating point values or decimal values. Keyword used for floating point data type is <strong>float</strong>.</p></li>
+            <li><h3>Double Floating Point</h3><p>
+              Double Floating Point data type is used for storing double precision floating point values or decimal values. Keyword used for double floating point data type is double.
+            </p></li>
+            <li><h3>void</h3>
+              <p>
+                Void means without any value. void datatype represents a valueless entity. Void data type is used for those function which does not returns a value.
+            </p></li>
+            <li><h3>Wide Character</h3>
+            <p>
+              Wide character data type is also a character data type but this data type has size greater than the normal 8-bit datatype. Represented by wchar_t.
+            </p></li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-section" id="Variables">
+        <header >
+          <h2>Variables</h2>
+        </header>
+        <p>Variables are containers for storing data values.
+
+          In C++, there are different types of variables (defined with different keywords), for example:</p>
+        <ul>
+          <li>
+              <p><strong>int</strong> - stores integers (whole numbers), without decimals, such as 123 or -123</p>
+          </li>
+          <li>
+              <p><strong>double</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</p>
+          </li>
+          <li>
+              <p><strong>char</strong> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</p>
+          </li>
+          <li>
+            <p><strong>string</strong>- stores text, such as "Hello World". String values are surrounded by double quotes</p>
+          </li>
+          <li>
+            <p><strong>bool</strong>- stores values with two states: true or false</p>
+          </li>
+        </ul>
+        <h4>Syntax:</h4>
+        <code>
+          <em>type variable = value;</em>
+        </code>
+        <br>
+        <h4>Example:</h4>
+        <code>
+          int myNum = 15;
+          <br>cout << myNum;
+        </code>
+        <h4>Output</h4>
+        <code>
+          15
+        </code>
+      </section>
+      <section class="main-section" id="Scope">
+        <header >
+          <h2>Scope</h2>
+        </header>
+      <div class="content">
+        <p>In general, the scope is defined as the extent up to which something can be worked with. In programming also the scope of a variable is defined as the extent of the program code within which the variable can we accessed or declared or worked with.</p><p> There are mainly two types of variable scopes:</p>
+
+          <ol>
+            <li><h3>Local Variables</h3>
+                <p>Variables defined within a function or block are said to be local to those functions.
+                  <ul>
+                    <li>Anything between ‘{‘ and ‘}’ is said to inside a block.</li>
+                    <li>Local variables do not exist outside the block in which they are declared, i.e. they can not be accessed or used outside that block.</li>
+                    <li>Declaring local variables: Local variables are declared inside a block.</li>
+                  </ul>
+                </p>
+            </li>
+            <li>
+              <h3>Global Variables</h3>
+              <p>
+                As the name suggests, Global Variables can be accessed from any part of the program.
+                <ul>
+                  <li>They are available through out the life time of a program.</li>
+                  <li>They are declared at the top of the program outside all of the functions or blocks.</li>
+                  <li>Declaring global variables: Global variables are usually declared outside of all of the functions and blocks, at the top of the program. They can be accessed from any portion of the program.</li>
+                </ul>
+              </p>
+            </li>
+          </ol>
+      </div>
+      </section>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </main>
+    </body>
+  </html>
